@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Fair Repo</title>
+	<link href="assets/page.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+
+	<header class="repo-header mdl-layout__header mdl-layout__header--waterfall">
+		<div class="mdl-layout__header-row">
+			
+<div class="mdl-layout-title">
+	<div id="repo-buttons-add">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored only-mobile"
+				onclick="showInstallButtons()">
+			Add to F-Droid
+		</button>
+	</div>
+	<a href="assets/qr_code.html" class="rm-no-underline only-desktop">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+			Add to F-Droid
+		</button>
+	</a>
+	<div id="repo-buttons-install" class="only-mobile">
+		<a href="https://f-droid.org" target="_blank" rel="noopener" class="rm-no-underline">
+			<button id="repo-buttons-install-need"
+					class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				I need F-Droid
+			</button>
+		</a>
+		<a href="fdroidrepos://repo.m0k1.pw?fingerprint=47B5AF6D8E5C98738D48CA2C68D1AC0DA6CF62EC8B5BB8A9BF788887C9112741" class="repo-buttons-install-have">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+					onclick="addRepo()">
+				I have F-Droid
+			</button>
+		</a>
+	</div>
+</div>
+
+		</div>
+	</header>
+
+	<main class="mdl-layout__content">
+		
+		<section class="mdl-grid mdl-cell--10-col">
+			<div class="mdl-cell mdl-cell--12-col repo-content">
+				<h3>Fair Repo</h3>
+				<p>A F-Droid mirror of FairApps by m0k1</p>
+			</div>
+			
+			
+
+<div class="rm-app-card rm-app-card--no-hover mdl-cell mdl-cell--6-col
+			mdl-card mdl-shadow--2dp mdl-color--white">
+
+	<div class="rm-app-card-left"
+		style="background-image: url(icons-640/de.schildbach.wallet.faircoin.238.png)">
+	</div>
+	<div class="rm-app-card-right">
+		<div class="rm-app-card-title">FairCoin Wallet</div>
+		<div class="rm-app-card-summary">FairCoin Wallet for Android</div>
+		<div class="rm-app-card-description">FairCoin is the monetary base system for FairCoop, an open global cooperative whose purpose is to create an alternative financial system. FairCoin was created to pro...</div>
+		
+		
+		<div class="rm-app-card-updated">
+			Version 5.18.6 (March 16, 2019)
+		</div>
+		
+	</div>
+
+</div>
+
+
+			
+			
+
+<div class="rm-app-card rm-app-card--no-hover mdl-cell mdl-cell--6-col
+			mdl-card mdl-shadow--2dp mdl-color--white">
+
+	<div class="rm-app-card-left"
+		style="background-image: url(icons-640/de.schildbach.wallet.faircoin_test.238.png)">
+	</div>
+	<div class="rm-app-card-right">
+		<div class="rm-app-card-title">FairCoin Wallet Testnet</div>
+		<div class="rm-app-card-summary">FairCoin Wallet for Android on TESTNET</div>
+		<div class="rm-app-card-description">This version of the FairCoin wallet is for the test net only. You cannot send or receive real FairCoins. It\&#39;s for testing purpose only.</div>
+		
+		
+		<div class="rm-app-card-updated">
+			Version 5.18.6-testnet (April 18, 2019)
+		</div>
+		
+	</div>
+
+</div>
+
+
+			
+		</section>
+		<footer class="mdl-mega-footer" id="f-droid">
+			<div class="mdl-mega-footer__top-section mdl-grid">
+				<div class="mdl-cell mdl-cell--4-col fdroid-icon">
+	<img src="assets/f-droid.png"/>
+</div>
+<div class="mdl-cell mdl-cell--8-col fdroid-text">
+	<p>Use F-Droid to install apps and ensure access to app updates.</p>
+
+	<p>
+		F-Droid is an independent, community-sourced app store.
+		Adding a repo to  F-Droid makes the apps within it available for download
+		and ensures that you have access to secure app updates.
+	</p>
+	<p>
+		Download F-Droid at <a href="https://f-droid.org">f-droid.org</a>.
+	</p>
+</div>
+
+			</div>
+			<div class="mdl-mega-footer__bottom-section">
+				<span class="repo-made-with">Hosted with ❤ by <a href="https://m0k1.pw">m0k1<a>.</span>
+			</div>
+		</footer>
+
+	</main>
+</div>
+
+
+<script src="assets/material.min.js"></script>
+<script type="text/javascript">
+	var add = document.getElementById('repo-buttons-add');
+	var install = document.getElementById('repo-buttons-install');
+	add.style.display = 'inline-block';
+	install.style.display = 'none';
+	function showInstallButtons() {
+		add.style.display = 'none';
+		install.style.display = 'inline-block';
+	}
+	function addRepo() {
+		add.style.display = 'inline-block';
+		install.style.display = 'none';
+	}
+</script>
+
+
+</body>
+</html>

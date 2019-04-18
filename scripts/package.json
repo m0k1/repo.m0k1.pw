@@ -1,0 +1,14 @@
+{
+  "name": "mdroid-tools",
+  "version": "0.0.1",
+  "dependencies": {
+    "google-play-scraper": "^6.2.2",
+
+  },
+  "scripts": {
+    "start": "node main.js",
+    "build": "r build",
+    "test": "res test",
+    "eject": "rts eject"
+  }
+}
